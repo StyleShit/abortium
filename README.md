@@ -1,4 +1,4 @@
-# Abortable Process
+# Abortium
 
 Halt a process of asynchronous steps using an AbortSignal.
 
@@ -50,12 +50,12 @@ button.addEventListener('click', () => {
 
 # What
 
-This package solves this problem by letting you create a process of asynchronous steps that
+Abortium solves this problem by letting you create a process of asynchronous steps that
 will be halted when the `AbortSignal` is aborted. It uses the `AbortController` API under
 the hood, and provides a more convenient API to use:
 
 ```typescript
-import { abortableProcess } from 'abortable-process';
+import { abortableProcess } from 'abortium';
 
 const controller = new AbortController();
 

@@ -1,12 +1,12 @@
 {
-	"name": "abortable-process",
-	"description": "AHalt a process of asynchronous steps using an AbortSignal",
+	"name": "abortium",
+	"description": "Halt a process of asynchronous steps using an AbortSignal",
 	"version": "0.0.0",
 	"author": "StyleShit",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/StyleShit/abortable-process"
+		"url": "https://github.com/StyleShit/abortium"
 	},
 	"type": "module",
 	"main": "dist/index.cjs",

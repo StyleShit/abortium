@@ -1,5 +1,5 @@
 ---
-'abortable-process': minor
+'abortium': minor
 ---
 
 Initial version
