@@ -5,11 +5,11 @@ Halt a process of asynchronous steps using an AbortSignal.
 # Why
 
 JavaScript is single-threaded, which means you can't really halt a running process.
-However, it provides us an API called `AbortController` that is basically usable only in specific
+However, it provides us an API called [`AbortController`](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) that is basically usable only in specific
 scenarios and APIs, such as `fetch` and `addEventListener`.
 
 If you want to use the `AbortController` API in your code, you need to wait for each function to
-finish, and check between the function runs whether the `AbortSignal` has been aborted.
+finish, and check between the function runs whether the [`AbortSignal`](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) has been aborted.
 This is a tedious task, and it can be easily forgotten:
 
 ```typescript
@@ -50,9 +50,9 @@ button.addEventListener('click', () => {
 
 # What
 
-This package lets you create a process of asynchronous steps that can will be halted when the
-`AbortSignal` is aborted. It uses the `AbortController` API under the hood, but it provides a
-more convenient API to use:
+This package solves this problem by letting you create a process of asynchronous steps that
+will be halted when the `AbortSignal` is aborted. It uses the `AbortController` API under
+the hood, and provides a more convenient API to use:
 
 ```typescript
 import { abortableProcess } from 'abortable-process';
