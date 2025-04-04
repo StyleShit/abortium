@@ -1,5 +1,0 @@
----
-'abortium': minor
----
-
-Initial version

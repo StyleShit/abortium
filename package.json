@@ -1,7 +1,7 @@
 {
 	"name": "abortium",
 	"description": "Halt a process of asynchronous steps using an AbortSignal",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"author": "StyleShit",
 	"license": "MIT",
 	"repository": {
